@@ -30,3 +30,47 @@ If you want to add new albums to the dataset, add them to `data/album-urls.json`
 ```bash
 pnpm dlx tsx scripts/data/scrape.ts --headless --urls-path data/album-urls.json --output-path data/data.json
 ```
+
+---
+
+some results
+
+sonnet 4.5
+
+All Runs Comparison
+| Run Name | Method | Avg Δ | Median Δ |
+|----------|--------|-------|----------|
+| dominant-v7-final | dominant-color | 19.71 | 17.51 |
+| dominant-v5-adaptive | dominant-color | 19.91 | 17.64 |
+| dominant-v6 | dominant-color | 20.11 | 18.82 |
+| dominant-v3 | dominant-color | 21.89 | 19.86 |
+| dominant-v1 | dominant-color | 22.11 | 19.78 |
+| dominant-v4 | dominant-color | 23.58 | 21.00 |
+| dominant-v2 | dominant-color | 24.18 | 20.35 |
+| baseline | average-color | 27.13 | 24.69 |
+
+gemini 3 pro
+
+============================================================
+📊 ALL RUNS SUMMARY
+============================================================
+Run Name Method Avg Δ Median Δ
+
+---
+
+border-0.15 border 13.47 10.39
+final-check border 13.47 10.39 ← current
+border-0.1 border 13.85 10.37
+border-0.125 border 14.06 10.43
+border-test-1 border 14.45 10.34
+border-0.15-bottom-2 border 14.65 10.71
+border-0.05 border 14.66 11.66
+vibrant-dark vibrant 15.48 12.58
+border-0.4 border 16.90 12.12
+vibrant-darkmuted vibrant 17.19 15.13
+kmeans-test-3 kmeans 18.00 14.03
+vibrant-pop-dark-0.5 vibrant 19.61 18.00
+baseline average-color 27.13 24.69
+vibrant-muted vibrant 32.24 31.57
+vibrant-test-2 vibrant 36.59 32.25
+============================================================
