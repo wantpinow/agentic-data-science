@@ -256,7 +256,7 @@ Don't expect perfection on the first try. Use the results to refine your approac
 
 ### 5. Time Constraints
 
-You have 24 hours to complete the task. Good luck!
+You have 24 hours to complete the task. You should use all of the time possible, producing at least 3 algorithm variants with any number of runs. Do not come back to me with questions at all. You need to complete the task fully, end to end until you have found an acceptable solution.
 
 ## Beat the Baseline
 
