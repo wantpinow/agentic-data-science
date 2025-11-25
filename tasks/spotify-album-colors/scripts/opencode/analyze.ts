@@ -73,6 +73,10 @@ async function analyzeAgentRuns() {
       modelId = worktreeDir.name;
     }
 
+    if (modelId.startsWith("vercel-")) {
+      modelId = modelId.substring(7);
+    }
+
     if (!existsSync(resultsDir)) {
       // No results in this worktree yet
       continue;
