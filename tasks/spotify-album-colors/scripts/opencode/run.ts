@@ -4,7 +4,7 @@ import * as path from "path";
 import * as fs from "fs";
 
 const opencodeCommand =
-  "Follow the instructions in @task.md and complete the task fully. You cannot come back to me with any questions, you must solve the task entirely on your own by coding a good solution. Good luck!";
+  "Follow the instructions in @task.md and complete the task fully. You cannot come back to me with any questions, you must solve the task entirely on your own by coding a good solution. Keep going until you have achieved a score lower than 10 on average across the sample dataset. Good luck!";
 
 const app = command({
   name: "run-agent",
@@ -16,7 +16,7 @@ const app = command({
     }),
   },
   handler: async ({ model }) => {
-    const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+    const timestamp = Date.now().toString();
     const modelId = model.replace(/\//g, "-");
     const worktreeName = `${timestamp}-${modelId}`;
     const cwd = process.cwd();

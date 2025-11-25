@@ -23,6 +23,8 @@ The evaluation uses **CIEDE2000**, a perceptually uniform color difference formu
 
 Look in `lib/evaluate.ts` for the implementation if you need it.
 
+Your goal is to develop an algorithm that consistently achieves scores lower than 10.
+
 ## Dataset
 
 The dataset consists of 89 Spotify albums with:
@@ -256,8 +258,8 @@ Don't expect perfection on the first try. Use the results to refine your approac
 
 ### 5. Time Constraints
 
-You have 24 hours to complete the task. You should use all of the time possible, producing at least 3 algorithm variants with any number of runs. Do not come back to me with questions at all. You need to complete the task fully, end to end until you have found an acceptable solution.
+You have 24 hours to complete the task. You should use all of the time possible, producing 3-10 algorithm variants with any number of runs. Do not come back to me with questions at all. You need to complete the task fully, end to end until you have found an acceptable solution. Your goal is to develop an algorithm that consistently achieves scores lower than 10 on average across the sample dataset. Anything less will be considered a failure.
 
 ## Beat the Baseline
 
-Your goal is to develop an algorithm that consistently achieves lower distances than the baseline. Good luck! 🎨
+Your goal is to develop an algorithm that consistently achieves scores lower than 10 on average across the sample dataset. Anything less will be considered a failure. Good luck! 🎨
